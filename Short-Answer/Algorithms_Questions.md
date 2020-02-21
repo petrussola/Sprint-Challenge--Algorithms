@@ -8,15 +8,15 @@ pseudocode with respect to the input size n of each of the following:
 ```python
 a)  a = 0 # O(1)
     while (a < n * n * n): # ( O(n) * O(n) * O(n) ) * O(1)
-      a = a + n * n # O(1)
+      a = a + n * n # a n^2
 ```
 
 
 ```python
 b)  sum = 0 # O(1)
-    for i in range(n): #O(n) * O(n)
+    for i in range(n): #O(n) * O(log n)
       j = 1 # O(1)
-      while j < n: # O(n) * O(1)
+      while j < n: # O(log n) * O(1)
         j *= 2 # O(1)
         sum += 1 # O(1)
 ```

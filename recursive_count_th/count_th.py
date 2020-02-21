@@ -14,11 +14,11 @@ def count_th(word):
     # Recursive component
     # If we are assessing the last 2 chars of the word
     # and if word matches 'th', return 1
-    elif len(word) == 2 and word == "th":
-        return 1
-    # if the last 2 chars are not 'th', return 0
-    elif len(word) == 2 and word != "th":
-        return 0
+    # elif len(word) == 2 and word == "th":
+    #     return 1
+    # # if the last 2 chars are not 'th', return 0
+    # elif len(word) == 2 and word != "th":
+    #     return 0
     # if word length is bigger than 2, then check 
     # the first 2 chars. If they match 'th' it means
     # that we should call teh recursion with our 
@@ -28,4 +28,4 @@ def count_th(word):
     # if the first 2 chars are not 'th', then 
     # we call the recursion without any counter
     else:
-        return count_th(word[1:])
+        return 0 + count_th(word[1:])
