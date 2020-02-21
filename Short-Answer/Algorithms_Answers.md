@@ -12,4 +12,13 @@ c) O(n) - linear runtime - bunnyEars gets called n times (it decreases at each i
 
 ## Exercise II
 
+1. We look for the middle floor in the building and we throw an egg. For that, we add first floor (in position 0) and last floor and divide by two.
+2. If the egg breaks, it means that the floor we are looking for should be lower. Therefore, we set the highest floor to the floor underneath the middle one.
+3. If the egg breaks it means that the floor we are looking for should be higher. Therefore, we set the lower floor in our algorithm to the floor above the one we tried.
+4. We then look for the middle floor between the first and the highest one using the same technique as point 1 above and we throw an egg. If it breaks, we go back to step 2 above. If it doesn't, to step 3.
+5. Eventually we will be narrowing down to one floor, which will be f.
+
+^ BINARY SEARCH :) - Runtime complexity is O(log n)
+
+
 
